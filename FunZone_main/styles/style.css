@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100&family=Roboto&display=swap");
+@import url("http://fonts.cdnfonts.com/css/jack-input");
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Plaguard;
+  src: url("assets/Plaguard-ZVnjx.otf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* HOME */
+/* ////////////////////////////////////////////////////////////// */
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.home img {
+  width: 100%;
+  height: 600px;
+}
+.home .home-div {
+  position: absolute;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  /* background: #00556b; */
+  width: 73vmax;
+  height: 40vmin;
+
+  font-family: Plaguard;
+  font-size: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* opacity: 68%; */
+  border: 1px solid #03cbff;
+  background: rgba(162, 239, 255, 0.1);
+  -webkit-backdrop-filter: blur(30px) brightness(115%);
+  backdrop-filter: blur(30px) brightness(115%);
+
+  z-index: 0;
+}
+.home-title p {
+  -webkit-text-fill-color: #def8fc;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #03cbff;
+  letter-spacing: 1vw;
+}
+
+.home-msg {
+  width: 37vmax;
+  height: 8vmin;
+
+  font-family: "JackInput", sans-serif;
+  font-size: 2.5vw;
+  color: #00556b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 5px solid #5bbbd4;
+  background: #def8fc;
+  margin-top: -4vmin;
+
+  z-index: 1;
+}
+
+.blink {
+  opacity: 0;
+}
+
+/* MAIN BODY */
+/* ////////////////////////////////////////////////////////////// */
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-overlay div {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 170vh;
+
+  background: rgba(162, 239, 255, 0.1);
+  -webkit-backdrop-filter: blur(30px) brightness(115%);
+  backdrop-filter: blur(30px) brightness(115%);
+
+  z-index: 0;
+}
+.body-overlay img {
+  width: 100%;
+  height: 170vh;
+  vertical-align: middle;
+}
+
+.main-body-div {
+  position: absolute;
+  width: 86vw;
+  height: 200vh;
+  display: flex;
+
+  z-index: 1;
+}
+
+.about-div {
+  width: 30vw;
+
+  background-color: white;
+}
+
+.games-div {
+  margin-left: 3vw;
+  width: 100%;
+}
+
+.random-games {
+  margin-top: 120px;
+  display: flex;
+}
+.random-games2 {
+  margin-top: 30px;
+  display: flex;
+}
+
+.random-game {
+  width: 30%;
+  height: 50vh;
+  transition: width 0.2s;
+  transition-timing-function: ease;
+
+  background-color: transparent;
+}
+
+.random-game:hover {
+  width: 33%;
+}
+.random-game-div1 {
+  margin-left: 5%;
+}
+.random-game-div2 {
+  margin-left: 5%;
+}
+.random-game-div3 {
+  margin-left: 5%;
+}
+.random-game-div4 {
+  margin-left: 5%;
+}
+.random-game-div5 {
+  margin-left: 5%;
+}
+.random-game-div6 {
+  margin-left: 5%;
+}
+
+.game-img {
+  width: 100%;
+  height: 45%;
+  background: white;
+}
+.game-img img {
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+}
+
+.game-des {
+  width: 100%;
+  height: 45%;
+
+  background-color: #def8fc;
+  padding-top: 2vw;
+  padding-left: 2vw;
+}
+
+.game-des .img-div {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+  border-radius: 50px;
+  box-shadow: 0 1px 10px 1px rgb(116, 116, 116);
+
+  margin-top: -4vw;
+  margin-left: 13%;
+}
+.game-des .img-div img {
+  margin: auto;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50px;
+}
+
+.game-des span {
+  font-size: 4vmin;
+  color: #00556b;
+}
+.game-des hr {
+  border-style: solid;
+  margin-left: 0;
+  width: 15%;
+  border-width: 3px;
+  color: #00556b;
+  background-color: #00556b;
+}
+
+.game-des .game-description {
+  margin-top: 1vw;
+  width: 80%;
+}
+
+.game-link {
+  background: rgba(162, 239, 255, 0.3);
+  -webkit-backdrop-filter: blur(30px) brightness(115%);
+  backdrop-filter: blur(30px) brightness(115%);
+  width: 100%;
+  height: 13%;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  cursor: pointer;
+
+  padding-left: 1vw;
+}
+.game-link:hover {
+  color: #00556b;
+  background: rgba(162, 239, 255, 0.5);
+}
+
+.game-link span {
+  font-weight: bolder;
+  letter-spacing: 0.4vw;
+  font-size: 1.2vw;
+  margin-left: 1vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.all-games {
+  width: 100%;
+  height: 57vh;
+  margin-top: 6vh;
+
+  /*background-color: white;*/
+}
+
+/* FOOTER */
+/* ////////////////////////////////////////////////////////////// */
+.footer {
+  height: 20vmin;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev-div {
+  display: flex;
+  justify-content: center;
+}
+.developer {
+  margin: 2vh 2vw 4vh;
+  font-weight: bold;
+  font-size: 2vh;
+  color: #ccf8ff;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ABOUT CAROUSEL-2 */
+
+.about-hr {
+  border-style: solid;
+  margin: 1.25rem 2rem;
+  width: 15%;
+  border-width: 3px;
+  color: #d80043;
+  background-color: #d80043;
+}
+
+.about-slider {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.about-slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40rem;
+  transition: transform 1s;
+}
+
+.about-img-box {
+  height: 52vh;
+}
+
+.about-img-box > img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-box {
+  background: linear-gradient(to top right, #840023, #e60054);
+  padding: 0.1rem;
+}
+
+.about-header {
+  margin-left: 2rem;
+  color: white;
+  letter-spacing: 0.5rem;
+  padding-left: 4%;
+}
+
+.about-txt-box {
+  margin-top: 3rem;
+  padding: 0 4%;
+  margin-bottom: 3rem;
+  height: 33vh;
+}
+
+.about-txt {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about-links-box {
+  margin: 1rem 0 1rem;
+  background: linear-gradient(to top right, #840023, #e60054);
+  width: 34%;
+  height: 7%;
+  padding: 0.2rem;
+}
+.about-links-box a {
+  text-decoration: none;
+  color: white;
+  padding-right: 0.2rem;
+}
+
+.fa-github-square {
+  margin: 0.1rem 0.6rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* GAME CAROUSEL-1 */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-text-box {
+  width: 35vw;
+  height: 57vh;
+  position: relative;
+
+  background: rgba(162, 239, 255, 0.3);
+  -webkit-backdrop-filter: blur(30px) brightness(115%);
+  backdrop-filter: blur(30px) brightness(115%);
+}
+
+.slider-img-box {
+  width: 100%;
+  height: 57vh;
+  position: relative;
+  overflow: hidden;
+
+  background-color: lightseagreen;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20rem;
+  transition: transform 1s;
+}
+
+.slide > img {
+  width: 100%;
+  height: 57vh;
+}
+
+.slider__btn {
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  z-index: 10;
+  border: none;
+  background-color: #def8fc;
+  font-family: inherit;
+  color: #00556b;
+
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.game-description-box {
+  padding: 0 10%;
+  height: 100%;
+  position: absolute;
+}
+
+.game-header {
+  font-size: 4vmin;
+  color: #def8fc;
+  margin-bottom: 5vh;
+}
+
+.game-header h3 {
+  margin-bottom: 0;
+}
+
+.game-header hr {
+  border-style: solid;
+  margin-left: 0;
+  width: 15%;
+  border-width: 3px;
+  color: #def8fc;
+  background-color: #def8fc;
+}
+
+.game-text {
+  color: #def8fc;
+}
+
+.creator-img-div {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+  border-radius: 50px;
+  box-shadow: 0 1px 10px 1px rgb(116, 116, 116);
+  right: 10%;
+  bottom: 8%;
+}
+
+.creator-img-div img {
+  margin: auto;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50px;
+}
+
+.overlay-img {
+  height: 57vh;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.overlay-img:hover {
+  opacity: 0.3;
+}
+
+.play-icon {
+  color: white;
+}
