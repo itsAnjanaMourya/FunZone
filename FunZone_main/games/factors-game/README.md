@@ -1,10 +1,7 @@
 # Factors Game
 
-The 🐐 of fun math games, twisting the very rules of math and increasingly challenging your skills
+The fun math game, twisting the very rules of math and increasingly challenging your skills
 
-### Screenshot
-
-![Screenshot of level 2 of Factors Game](/etc/screenshots/level-2-night-rainbow-screenshot.png?raw=true "Level 2")
 
 ## The Concept
 
@@ -27,13 +24,3 @@ Get your canvas and go!
 var canvas = document.getElementById('myCanvas');
 FactorsGame.init(canvas).start();
 ```
-
-### Author
-
-Michael P. Nitowski <[mpnitowski@gmail.com](mailto:mpnitowski@gmail.com)>
-    (Twitter: [@mikenitowski](https://twitter.com/mikenitowski),
-     Web: [mnito.co](http://mnito.co))
-
-### License
-
-Factors Game is licensed under the [MIT license](/LICENSE "License of Factors Game").
